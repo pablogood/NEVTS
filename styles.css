@@ -17,27 +17,27 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-top: 100px; /* Odstęp od góry */
+  margin-top: 125px; /* Odstęp od góry zwiększony o 25% */
 }
 
 .button {
-  background-color: #333366; /* Ciemnogranatowy */
+  background-color: #1A1A33; /* Ciemnogranatowy */
   color: #FFFFFF;
   font-size: 24px; /* Powiększenie tekstu */
   font-weight: bold; /* Pogrubiony tekst */
   text-transform: uppercase; /* Tekst w formie wielkich liter */
-  padding: 20px 40px; /* Większa odległość między tekstem a ramką */
-  border: 1px solid #1F1F33; /* Delikatna ramka granatowa */
+  padding: 30px 40px; /* Większa odległość między tekstem a ramką */
+  border: 1px solid #0D0D1A; /* Delikatna ramka granatowa */
   border-radius: 8px;
-  margin: 10px;
+  margin: 20px 10px; /* Odstępy góra/dół zwiększone o 25% */
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
-  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1), 0px 3px 6px rgba(0, 0, 0, 0.1); /* Efekt 3D */
+  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.2); /* Efekt 3D */
 }
 
 .button:hover {
-  background-color: #222244; /* Ciemniejszy granat przy najechaniu myszką */
+  background-color: #0D0D1A; /* Ciemniejszy granat przy najechaniu myszką */
   transform: scale(1.05); /* Lekki efekt powiększenia przy najechaniu */
-  box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2), 0px 4px 8px rgba(0, 0, 0, 0.2); /* Silniejszy efekt 3D */
+  box-shadow: 0px 10px 16px rgba(0, 0, 0, 0.3), 0px 5px 10px rgba(0, 0, 0, 0.3); /* Silniejszy efekt 3D */
 }
