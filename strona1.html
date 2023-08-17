@@ -11,21 +11,22 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
-      position: relative; /* Wymagane dla przycisku powrotu */
+      position: relative;
     }
     .back-button {
       position: absolute;
       bottom: 20px;
-      right: 20px; /* Przeniesiono do prawego dolnego rogu */
+      right: 50%; /* Wyśrodkowanie horyzontalne */
+      transform: translateX(50%); /* Wyśrodkowanie horyzontalne */
       background-color: #FFD700; /* Kolor żółty pasujący do Entresto */
       color: #FFFFFF;
-      font-size: 24px; /* Większa czcionka */
+      font-size: 14px; /* Mniejsza czcionka */
       border: none;
-      border-radius: 10px; /* Zaokrąglenie krawędzi */
-      padding: 20px 40px; /* Większe odstępy wewnętrzne */
+      border-radius: 10px;
+      padding: 8px 16px; /* Mniejsze odstępy wewnętrzne */
       cursor: pointer;
-      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Lekka cień */
-      z-index: 1; /* Wyświetlanie przycisku nad innymi warstwami */
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); /* Lekka cień */
+      z-index: 1;
       transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     }
   </style>
@@ -36,6 +37,7 @@
   <button class="back-button" onclick="window.location.href='index.html'">Wróć do Strony Głównej</button>
 </body>
 </html>
+
 
 
     <head>
