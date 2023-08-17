@@ -1,37 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Połączone Strony</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: stretch;
-      overflow: hidden;
-    }
-    .iframe-container {
-      display: flex;
-      overflow: hidden;
-      height: 100vh; /* Wyświetlaj w całości */
-    }
-    .iframe {
-      width: 100%;
-      height: 100%;
-      border: none;
-    }
-  </style>
+  <title>Przyciski do Stron</title>
+  <link rel="stylesheet" type="text/css" href="styles.css"> <!-- Dodaj arkusz stylów z pliku styles.css -->
 </head>
 <body>
-  <div class="iframe-container">
-    <iframe class="iframe" src="strona1.html"></iframe>
-  </div>
-  <div class="iframe-container">
-    <iframe class="iframe" src="strona2.html"></iframe>
-  </div>
-  <div class="iframe-container">
-    <iframe class="iframe" src="strona3.html"></iframe>
+  <div class="button-container">
+    <button class="fasola-button" onclick="window.location.href='strona1.html'">Strona 1</button>
+    <button class="fasola-button" onclick="window.location.href='strona2.html'">Strona 2</button>
+    <button class="fasola-button" onclick="window.location.href='strona3.html'">Strona 3</button>
   </div>
 </body>
 </html>
