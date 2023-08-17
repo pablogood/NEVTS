@@ -22,7 +22,7 @@
       border: none;
       transform-origin: top center; /* Ustaw punkt skalowania na górnym środku */
     }
-    #slider {
+    #globalSlider {
       width: 80%;
       margin: 20px auto;
     }
@@ -38,9 +38,9 @@
   <div class="content-container">
     <iframe class="iframe" src="strona3.html"></iframe>
   </div>
-  <input id="slider" type="range" min="50" max="150" value="100" step="1" oninput="updateScale(this.value)">
+  <input id="globalSlider" type="range" min="50" max="150" value="100" step="1" oninput="updateGlobalScale(this.value)">
   <script>
-    function updateScale(scaleValue) {
+    function updateGlobalScale(scaleValue) {
       var iframes = document.querySelectorAll('.iframe');
       for (var i = 0; i < iframes.length; i++) {
         iframes[i].style.transform = 'scale(' + (scaleValue / 100) + ')';
