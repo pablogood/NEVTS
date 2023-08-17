@@ -16,6 +16,7 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   margin-top: 100px; /* Odstęp od góry */
 }
 
@@ -24,6 +25,7 @@ body {
   color: #FFFFFF;
   font-size: 24px; /* Powiększenie tekstu */
   font-weight: bold; /* Pogrubiony tekst */
+  text-transform: uppercase; /* Tekst w formie wielkich liter */
   padding: 20px 40px; /* Większa odległość między tekstem a ramką */
   border: 1px solid rgba(0, 0, 0, 0.1); /* Delikatna ramka */
   border-radius: 8px;
@@ -31,9 +33,6 @@ body {
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień */
 }
 
