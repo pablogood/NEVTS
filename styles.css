@@ -1,34 +1,38 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #0A1929; /* Jasnogranatowe tło */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-}
-
-.button-container {
+  background-image: url('photo1.jpg'); /* Dodaj tło ze zdjęciem */
+  background-size: cover;
+  background-repeat: no-repeat;
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-y: scroll; /* Dodaj pasek przewijania tylko w pionie */
+  height: 100vh;
 }
 
-.entresto-button {
-  background-color: #FFD700; /* Kolor żółty pasujący do Entresto */
+.buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px; /* Odstęp od góry */
+}
+
+.button {
+  background-color: #333366; /* Ciemny granat */
   color: #FFFFFF;
-  font-size: 24px; /* Większa czcionka */
+  font-size: 20px;
+  padding: 15px 30px;
   border: none;
-  border-radius: 10px; /* Zaokrąglenie krawędzi */
-  padding: 20px 40px; /* Większe odstępy wewnętrzne */
-  margin: 10px; /* Większe odstępy między przyciskami */
+  border-radius: 8px;
+  margin: 10px;
   cursor: pointer;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Lekka cień */
   transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
+  text-decoration: none;
 }
 
-.entresto-button:hover {
-  background-color: #FFA500; /* Ciemniejszy odcień żółtego po najechaniu myszką */
-  transform: scale(1.05); /* Lekkie powiększenie przy najechaniu */
-  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Lekki cień przy najechaniu */
+.button:hover {
+  background-color: #5050A0; /* Granat przy najechaniu myszką */
+  transform: scale(1.05); /* Lekki efekt powiększenia przy najechaniu */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Lekki cień */
 }
