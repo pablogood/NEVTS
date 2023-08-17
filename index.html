@@ -6,32 +6,22 @@
     body {
       margin: 0;
       padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      overflow: hidden;
-    }
-    .content-container {
-      width: 100%;
-      flex: 1; /* Rozciągnij na całą dostępną przestrzeń */
       overflow: hidden;
     }
     .iframe {
-      width: 100%;
-      height: 100%;
+      width: 100vw;
+      height: 100vh;
       border: none;
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   </style>
 </head>
 <body>
-  <div class="content-container">
-    <iframe class="iframe" src="strona1.html"></iframe>
-  </div>
-  <div class="content-container">
-    <iframe class="iframe" src="strona2.html"></iframe>
-  </div>
-  <div class="content-container">
-    <iframe class="iframe" src="strona3.html"></iframe>
-  </div>
+  <iframe class="iframe" src="strona1.html"></iframe>
+  <iframe class="iframe" src="strona2.html"></iframe>
+  <iframe class="iframe" src="strona3.html"></iframe>
 </body>
 </html>
