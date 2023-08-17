@@ -12,14 +12,19 @@
     }
     .content-container {
       width: 100%;
-      height: 100vh; /* Ustal pełną wysokość widoku */
+      height: 33.33%; /* Dziel wysokość na trzy równe części */
       overflow: hidden;
       margin: 10px 0; /* Dodaj odstęp między stronami */
     }
     .iframe {
       width: 100%;
-      height: 100%; /* Ustal pełną wysokość dla iframe */
+      height: 80vh; /* Ustal wysokość na 80% wysokości widoku */
       border: none;
+      transform-origin: top center; /* Ustaw punkt skalowania na górnym środku */
+    }
+    #slider {
+      width: 80%;
+      margin: 20px auto;
     }
   </style>
 </head>
@@ -33,5 +38,14 @@
   <div class="content-container">
     <iframe class="iframe" src="strona3.html"></iframe>
   </div>
+  <input id="slider" type="range" min="50" max="150" value="100" step="1" oninput="updateScale(this.value)">
+  <script>
+    function updateScale(scaleValue) {
+      var iframes = document.querySelectorAll('.iframe');
+      for (var i = 0; i < iframes.length; i++) {
+        iframes[i].style.transform = 'scale(' + (scaleValue / 100) + ')';
+      }
+    }
+  </script>
 </body>
 </html>
