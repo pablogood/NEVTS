@@ -9,18 +9,16 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-    .content-container {
-      width: 100%;
-      height: auto; /* Zmieniono na automatyczną wysokość */
       overflow: hidden;
-      margin: 10px 0; /* Dodaj odstęp między stronami */
+    }
+    .iframe-container {
+      width: 100%;
+      height: 100vh;
     }
     .iframe {
       width: 100%;
-      height: 100%; /* Zmieniono na 100% wysokość */
+      height: 100%;
       border: none;
-      transform-origin: top center; /* Ustaw punkt skalowania na górnym środku */
     }
     #globalSlider {
       width: 80%;
@@ -29,13 +27,13 @@
   </style>
 </head>
 <body>
-  <div class="content-container">
+  <div class="iframe-container">
     <iframe class="iframe" src="strona1.html"></iframe>
   </div>
-  <div class="content-container">
+  <div class="iframe-container">
     <iframe class="iframe" src="strona2.html"></iframe>
   </div>
-  <div class="content-container">
+  <div class="iframe-container">
     <iframe class="iframe" src="strona3.html"></iframe>
   </div>
   <input id="globalSlider" type="range" min="50" max="150" value="100" step="1" oninput="updateGlobalScale(this.value)">
