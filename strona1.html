@@ -11,18 +11,22 @@
       justify-content: center;
       align-items: center;
       height: 100vh;
+      position: relative; /* Wymagane dla przycisku powrotu */
     }
     .back-button {
-      position: fixed;
+      position: absolute;
       bottom: 20px;
-      left: 20px;
-      background-color: #E4572E; /* Kolor przycisku */
+      right: 20px; /* Przeniesiono do prawego dolnego rogu */
+      background-color: #FFD700; /* Kolor żółty pasujący do Entresto */
       color: #FFFFFF;
-      font-size: 14px;
+      font-size: 24px; /* Większa czcionka */
       border: none;
-      border-radius: 10px;
-      padding: 10px 20px;
+      border-radius: 10px; /* Zaokrąglenie krawędzi */
+      padding: 20px 40px; /* Większe odstępy wewnętrzne */
       cursor: pointer;
+      box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Lekka cień */
+      z-index: 1; /* Wyświetlanie przycisku nad innymi warstwami */
+      transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
     }
   </style>
 </head>
@@ -32,6 +36,7 @@
   <button class="back-button" onclick="window.location.href='index.html'">Wróć do Strony Głównej</button>
 </body>
 </html>
+
 
     <head>
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
