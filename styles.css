@@ -14,18 +14,21 @@ body {
   align-items: center;
 }
 
-.fasola-button {
-  background-color: #FF6B35; /* Kolor pomarańczowy */
+.entresto-button {
+  background-color: #E4572E; /* Kolor pomarańczowy Entresto */
   color: #FFFFFF;
-  font-size: 18px;
+  font-size: 24px; /* Większa czcionka */
   border: none;
-  border-radius: 20px;
-  padding: 10px 20px;
-  margin: 5px;
+  border-radius: 10px; /* Zaokrąglenie krawędzi */
+  padding: 20px 40px; /* Większe odstępy wewnętrzne */
+  margin: 10px; /* Większe odstępy między przyciskami */
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Lekka cień */
+  transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.fasola-button:hover {
-  background-color: #E4572E; /* Ciemniejszy kolor pomarańczowy po najechaniu myszką */
+.entresto-button:hover {
+  background-color: #FF6B35; /* Ciemniejszy kolor pomarańczowy po najechaniu myszką */
+  transform: scale(1.05); /* Lekkie powiększenie przy najechaniu */
+  box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.2); /* Lekki cień przy najechaniu */
 }
